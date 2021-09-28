@@ -9,3 +9,4 @@ ehthumbs.db
 Thumbs.db
 .vscode
 .idea
+build/node_modules
