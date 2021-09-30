@@ -55,7 +55,7 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Come and take a seat",
             "button_link": "",
             "button_style_secondary": false
           }
