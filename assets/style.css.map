@@ -1,1 +1,0 @@
-{"version":3,"file":"style.css","sources":["style.scss","components/base.scss"],"sourcesContent":["@import \"components/base\";","body {\n  border: 10px solid red;\n}"],"names":[],"mappings":"ACAA,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,cAAc,GACvB"}

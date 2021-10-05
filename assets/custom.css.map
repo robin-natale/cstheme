@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.scss"],"names":[],"mappings":"AAAA;EACE;;AAGE;EACE","file":"custom.css","sourcesContent":[".header-wrapper {\n  background: #000;\n\n  header {\n    h1.header__heading a.header__heading-link span {\n      color: #fff;\n    }\n  }\n}\n"]}

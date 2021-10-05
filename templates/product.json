@@ -53,10 +53,14 @@
     },
     "product-recommendations": {
       "type": "product-recommendations"
+    },
+    "my-custom-section" : {
+      "type" : "custom-section"
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "my-custom-section"
   ]
 }

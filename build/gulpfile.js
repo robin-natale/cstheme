@@ -1,5 +1,5 @@
 const { src, dest, series, watch } = require('gulp');
-const sass         = require('gulp-sass'),
+const sass         = require('gulp-sass')(require('sass')),
 	  cleancss     = require('gulp-clean-css'),
 	  notify       = require('gulp-notify'),
 	  livereload   = require('gulp-livereload'),
@@ -9,8 +9,8 @@ const sass         = require('gulp-sass'),
 	  webpack      = require('webpack-stream'),
 	  paths        = {
 						js:   './js/index.js' ,
-						sass: { index: ['./sass/style.scss'], watch: ['./sass/style.scss', './sass/components/*.scss', './sass/lib/*.scss'] },
-		  				css:  ['../assets/style.css']
+						sass: { index: ['./sass/custom.scss'], watch: ['./sass/custom.scss', './sass/components/*.scss', './sass/lib/*.scss'] },
+		  				css:  ['../assets/custom.css']
 					  }
 
 function buildJS(done) {
