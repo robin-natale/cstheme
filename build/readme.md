@@ -1,6 +1,6 @@
 # Basic build process
 
-* This process Looks for section specific SASS files in `./sass/sections` and sends to `../assets`
+* This process looks for section specific SASS files in `./sass/sections` and sends to `../assets`
 
 
 * Section specific css files will then need to be included in the sections `.liquid` file 
