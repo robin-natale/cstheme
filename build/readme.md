@@ -3,7 +3,7 @@
 * This process looks for section specific SASS files in `./sass/sections` and sends to `../assets`
 
 
-* Section specific css files will then need to be included in the sections `.liquid` file 
+* Section specific css files will then need to be included in the section's `.liquid` file 
   * e.g `{{ "section-custom-feature.css" | asset_url | stylesheet_tag }}`
 
 
