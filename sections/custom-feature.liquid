@@ -1,0 +1,57 @@
+{{ "section-custom-feature.css" | asset_url | stylesheet_tag }}
+
+<section class="custom-feature">
+    <div class="page-width">
+        <h4 class="h4">Custom Feature</h4>
+        {% for p in collections.frontpage.products %}
+            <h6> Product: {{ p .id }} - {{ p.title }} - {{ p.handle }} </h6>
+        {% endfor %}
+        <button id="custom-feature-btn">My Custom Button</button>
+        <h2 class="h2"> {{ section.settings.custom_text_title }} </h2>
+        <div>{{ section.settings.custom_text_body }}</div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "My Custom Feature",
+    "settings": [
+        {
+            "id": "custom_text_title",
+            "type": "text",
+            "label": "Text box heading",
+            "default": "Title",
+            "info": "Just a simple title"
+        },
+        {
+            "type": "checkbox",
+            "id": "custom_checkbox",
+            "label": "Show announcement",
+            "default": true
+        },
+        {
+            "id": "custom_text_body",
+            "type": "richtext",
+            "label": "Add custom text below",
+            "default": "<p>Add your text here</p>"
+        },
+        {
+            "type": "collection",
+            "id": "featured_collection",
+            "label": "Featured collection"
+        }
+    ],
+    "presets": [
+        {
+            "name": "My Custom Feature",
+            "category": "Custom"
+        }
+    ]
+}
+{% endschema %}
+
+{% javascript %}
+    var btn = document.querySelector('#custom-feature-btn')
+    console.log(btn);
+    btn.addEventListener('click', function(){ console.log('boop')} );
+{% endjavascript %}

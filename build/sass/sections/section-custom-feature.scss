@@ -1,0 +1,11 @@
+@import "../lib/mixins";
+@import "../partials/vars";
+
+section.custom-feature {
+  border: 4px dashed $teal;
+  border-radius: 10px;
+
+  button {
+    font-size: 18px;
+  }
+}

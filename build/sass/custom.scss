@@ -1,0 +1,17 @@
+@import "lib/normalize";
+@import "lib/mixins";
+@import "partials/vars";
+@import "partials/type";
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.h1, .h2, .h3 {
+  color: $teal;
+}
