@@ -4,7 +4,7 @@
 
 
 * Section specific css files will then need to be included in the section's `.liquid` file 
-  * e.g `{{ "section-custom-feature.css" | asset_url | stylesheet_tag }}`
+  * e.g `{{ "section-custom-feature.css" | asset_url | stylesheet_tag }}` see [here](https://github.com/jakeretain/sptheme/blob/master/sections/custom-feature.liquid)
 
 
 * `custom.scss` is the global customisation stylesheet and is included in `../layout/theme.liquid:112`
