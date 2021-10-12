@@ -15,7 +15,7 @@
   \*********************/
 /***/ (() => {
 
-eval("var msg = 'hello world';\nconsole.log(\"\".concat(msg));\n\n//# sourceURL=webpack://sptheme/./js/index.js?");
+eval("var msg = 'hello there';\nconsole.log(\"\".concat(msg));\n\n//# sourceURL=webpack://sptheme/./js/index.js?");
 
 /***/ })
 
