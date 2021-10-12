@@ -1,10 +1,10 @@
 # Basic build process
 
-* This process Looks for section specific SASS files in `./sass/sections` and sends to `../assets`
+* This process looks for section specific SASS files in `./sass/sections` and sends to `../assets`
 
 
-* Section specific css files will then need to be included in the sections `.liquid` file 
-  * e.g `{{ "section-custom-feature.css" | asset_url | stylesheet_tag }}`
+* Section specific css files will then need to be included in the section's `.liquid` file 
+  * e.g `{{ "section-custom-feature.css" | asset_url | stylesheet_tag }}` see [here](https://github.com/jakeretain/sptheme/blob/master/sections/custom-feature.liquid)
 
 
 * `custom.scss` is the global customisation stylesheet and is included in `../layout/theme.liquid:112`
